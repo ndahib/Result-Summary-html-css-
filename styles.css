@@ -1,0 +1,229 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: hsl(0, 0%, 100%);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    box-shadow: 10px 10px 10px -5px rgba(161, 159, 202, 0.75);
+}
+
+[class*="card"]
+{
+    height: 450px;
+    width: 300px;
+    text-align: center;
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+.container .blue-card
+{
+    background-image: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+#result-total
+{
+    margin: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    opacity: 0.7;
+}
+
+
+.cercle
+{
+    padding: 10%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(180deg,hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+}
+
+.cercle #portion
+{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.cercle #percentage
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    opacity: 0.5;
+}
+
+#tag
+{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p
+{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 225px;
+    color: white;
+    opacity: 0.7;
+}
+
+.container .white-card
+{
+    color:black;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 30px;
+    box-shadow: 10px 10px 10px -5px rgba(204, 203, 227, 0.75);
+}
+
+table
+{
+    border-collapse: separate;
+    border-spacing: 0 17px;
+    margin: 0 20px;
+    
+}
+caption
+{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 170px 0 auto;
+}
+
+td
+{
+    padding: 10px;
+    text-align: justify;
+    vertical-align: middle;
+    font-weight:600;
+}
+
+td:nth-child(1)
+{
+    border-right: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+td:nth-child(2)
+{
+    border-left: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button
+{
+    height: 45px;
+    margin: 20px;
+    padding: 5px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color:white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 30px;   
+}
+
+button:hover
+{
+    height: 50px;
+    background-image: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+}
+
+
+tr:nth-child(1) td
+{
+    color:hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.10);
+}
+
+tr:nth-child(2) td
+{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);;
+}
+
+
+tr:nth-child(3) td
+{
+    color:hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+tr:nth-child(4) td
+{
+    color:hsl(234, 85%, 45%);
+    background-color: hsla(234, 81%, 81%, 0.2);
+}
+
+
+.tb-tag
+{
+    padding-bottom: 2px;
+}
+
+
+tr:nth-child(1) > td:nth-child(1)::before {
+    content: url(assets/images/icon-reaction.svg);
+}
+
+tr:nth-child(2)  td:nth-child(1)::before {
+    content: url(assets/images/icon-memory.svg);
+}
+
+tr:nth-child(3) > td:nth-child(1)::before {
+    content: url(assets/images/icon-verbal.svg);
+}
+
+tr:nth-child(4) > td:nth-child(1)::before {
+    content: url(assets/images/icon-visual.svg);
+}
+
+tr td::before
+{
+    padding-top: 2px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+tr > td:nth-child(2)
+{
+    color: hsl(224, 30%, 27%);
+}
+
+tr > td:nth-child(2) .part2
+{
+    color: hsl(224, 30%, 27%);
+    opacity: 0.5;
+}
